@@ -1,4 +1,3 @@
-
 function quaterOfCircle(degree) {
     const circle = 360;
     const quater = ((degree / circle + 1) % 1);
@@ -19,3 +18,5 @@ function quaterOfCircle(degree) {
         return "Граница III/IV";
     } else return "Граница I/IV"
 }
+
+
