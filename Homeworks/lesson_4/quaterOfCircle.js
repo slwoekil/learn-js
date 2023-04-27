@@ -1,7 +1,7 @@
 
 function quaterOfCircle(degree) {
     const circle = 360;
-    const quater = Math.abs(degree / circle % 1);
+    const quater = ((degree / circle + 1) % 1);
 
     if (quater > 0 && quater < 0.25) {
         return "I";
