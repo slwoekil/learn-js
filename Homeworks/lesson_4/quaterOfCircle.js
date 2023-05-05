@@ -18,5 +18,3 @@ function quaterOfCircle(degree) {
         return "Граница III/IV";
     } else return "Граница I/IV"
 }
-
-

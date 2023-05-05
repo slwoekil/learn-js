@@ -14,4 +14,4 @@ function dayToday(inputDay) {
     console.log(today === userDay);
 }
 
-dayToday();
+dayToday('пятница');
