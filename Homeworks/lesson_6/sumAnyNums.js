@@ -7,11 +7,7 @@ function sumDivisibleByThree() {
          }
     if (arguments[i] % 3 === 0) {
         sum += arguments[i];
-    }
+        }
     }
     return sum;
 }
-console.log(sumDivisibleByThree(6, 7, 333))
-
-
-
