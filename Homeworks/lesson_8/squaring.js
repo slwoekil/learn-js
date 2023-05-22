@@ -1,6 +1,6 @@
 function callback(arrayOfNumbers) {
     for (let value of arrayOfNumbers) {
-        if (isFinite(value) !== true || typeof value !== 'number') {
+        if (Number.isFinite(value) !== true) {
             throw new Error(`Переданное значение '${value}' является ${typeof value} - невозможно возвести в квадрат`)
         }
     }
@@ -12,7 +12,7 @@ function callback(arrayOfNumbers) {
 }
 
 try {
-    callback([1, 2, 3, 'fsaf']);
+    callback([1, 2, 3, '5']);
 } catch(e) {
     console.log(e.message)
 }
