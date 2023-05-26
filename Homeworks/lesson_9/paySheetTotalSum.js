@@ -14,7 +14,7 @@ function displayPaySheet(courier, coefficient){
                 sum: workedCourier.sum * coefficient
             }
         })
-        .reduce((TotalSum, workedCourier) => TotalSum + workedCourier.sum, 0)
+        .reduce((totalSum, workedCourier) => totalSum + workedCourier.sum, 0)
 
     console.log(personalPaySheet);
 }
