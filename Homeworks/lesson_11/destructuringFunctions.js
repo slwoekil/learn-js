@@ -1,5 +1,6 @@
 // Необходимо написать функцию получения ФИО курьера. Параметры принимаем через деструктуринг. Объект courier имеет поля name, surname, patronymic, age, city.
 // *Вместо объекта, принимаем массив объектов. **У курьера может не быть отчества
+
 const couriers = [
     {
         name: 'Адольф',
@@ -36,6 +37,7 @@ console.log(getCourierName(couriers));
 
 const convert = (exArray) => {
     const [key, ...values] = exArray;
+
     return {
         [key] : [...values]
     }
@@ -58,6 +60,7 @@ console.log(getMax(1, 15, 2, 100, 7));
 function isPalindrom(sameString) {
     const cleanString = sameString.replaceAll(' ', '').toLowerCase();
     const reversedString = [...cleanString].reverse().join('');
+
     return cleanString === reversedString;
 }
 

@@ -6,7 +6,7 @@ function quaterOfCircle(degree) {
     }
 
     if (quater === 0) {
-        return "Граница I/IV"
+        return "Граница I/IV";
     } else if (quater < 90) {
         return "I";
     } else if (quater === 90) {
