@@ -27,7 +27,9 @@ const getCourierName = (couriers) => {
     return couriers.map(({name, surname, patronymic}) => {
         if (patronymic) {
             return `${surname} ${name} ${patronymic}`;
-        } else return `${surname} ${name}`;
+        } else {
+            return `${surname} ${name}`;
+        }
     })
 }
 
